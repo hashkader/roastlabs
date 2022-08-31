@@ -1988,6 +1988,12 @@ h6 {
   margin: 0;
 }
 
+@media (max-width:715px){
+  .animation-container{
+    display: none
+  }
+}
+
 @media (max-width: 768px) {
   #header #logo h1 {
     font-size: 28px;
@@ -2421,12 +2427,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid #fff;
   background: transparent;
   color: #fff;
-}
-
-@media (max-width: 768px) {
-  .video-sec-area {
-    padding-top: 0px;
-  }
 }
 
 .video-left {
