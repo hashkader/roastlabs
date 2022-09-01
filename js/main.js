@@ -1,3 +1,26 @@
+const el = document.getElementById('main__container');
+
+setTimeout(() => {
+  el.style.visibility = 'visible';
+
+  // 👇️ if you used `display` to hide element
+  // el.style.display = 'block';
+}, 12500); // 👈️ delay in milliseconds
+const mainAnimation = document.getElementById('main__animation');
+setTimeout(() => {
+  
+
+  // 👇️ removes element from DOM
+  mainAnimation.style.display = 'none';
+
+  // 👇️ hides element (still takes up space on page)
+  // box.style.visibility = 'hidden';
+}, 12500); // 👈️ time in milliseconds
+
+
+
+
+
 
 $(document).ready(function(){
 	"use strict";
