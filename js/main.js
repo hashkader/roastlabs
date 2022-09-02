@@ -5,7 +5,7 @@ setTimeout(() => {
 
   // 👇️ if you used `display` to hide element
   // el.style.display = 'block';
-}, 1); // 👈️ delay in milliseconds
+}, 12500); // 👈️ delay in milliseconds
 const mainAnimation = document.getElementById("main__animation");
 setTimeout(() => {
   // 👇️ removes element from DOM
@@ -13,7 +13,7 @@ setTimeout(() => {
 
   // 👇️ hides element (still takes up space on page)
   // box.style.visibility = 'hidden';
-}, 1); // 👈️ time in milliseconds
+}, 12500); // 👈️ time in milliseconds
 
 $(document).ready(function () {
   "use strict";
