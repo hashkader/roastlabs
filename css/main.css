@@ -1989,8 +1989,6 @@ h6 {
 }
 
 @media (max-width: 715px) {
-  
-  
 }
 
 @media (max-width: 768px) {
@@ -2002,7 +2000,7 @@ h6 {
   }
   #main__animation {
     display: none;
-}
+  }
   #main__container {
     visibility: visible;
   }
@@ -3827,5 +3825,70 @@ span {
     left: 440px;
     top: 170px;
     opacity: 0;
+  }
+}
+
+figure:hover img {
+  transform: scale(1.1);
+}
+figure img {
+  position: relative;
+  transition: 0.8s all;
+}
+
+.link__hover-effect:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  bottom: -3px;
+  right: 0;
+  transition: all 300ms ease;
+}
+
+.link__hover-effect--white:after {
+  background-color: #fff;
+}
+
+.link__hover-effect:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.banner-area {
+  animation: fade-up 650ms 550ms backwards;
+  animation-delay: 12.6s;
+}
+
+h6 {
+  animation: fade-up 650ms 800ms backwards;
+  animation-delay: 13s;
+}
+
+h1 {
+  animation: fade-up 650ms 600ms backwards;
+  animation-delay: 13s;
+}
+
+nav,
+img {
+  animation: fade-up 650ms 1000ms backwards;
+  transition: all 0.1s ease 0s;
+  animation-delay: 13s;
+}
+
+.primary-btn {
+  animation: fade-up 650ms 1000ms backwards;
+  animation-delay: 13s;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
