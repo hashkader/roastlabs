@@ -1,19 +1,49 @@
 const el = document.getElementById("main__container");
 
-setTimeout(() => {
-  el.style.visibility = "visible";
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+// Check if the media query is true
+if (mediaQuery.matches) {
+  setTimeout(() => {
+    el.style.visibility = "visible";
+  
+    // 👇️ if you used `display` to hide element
+    // el.style.display = 'block';
+  }, 11500); // 👈️ delay in milliseconds
 
-  // 👇️ if you used `display` to hide element
-  // el.style.display = 'block';
-}, 12500); // 👈️ delay in milliseconds
-const mainAnimation = document.getElementById("main__animation");
-setTimeout(() => {
-  // 👇️ removes element from DOM
-  mainAnimation.style.display = "none";
+  const mainAnimation = document.getElementById("main__animation");
+  setTimeout(() => {
+    // 👇️ removes element from DOM
+    mainAnimation.style.display = "none";
+  
+    // 👇️ hides element (still takes up space on page)
+    // box.style.visibility = 'hidden';
+  }, 12500); // 👈️ time in milliseconds
+  
+} else{
 
-  // 👇️ hides element (still takes up space on page)
-  // box.style.visibility = 'hidden';
-}, 12500); // 👈️ time in milliseconds
+  setTimeout(() => {
+    el.style.visibility = "visible";
+  
+    // 👇️ if you used `display` to hide element
+    // el.style.display = 'block';
+  }, 1); // 👈️ delay in milliseconds
+
+  const mainAnimation = document.getElementById("main__animation");
+  setTimeout(() => {
+    // 👇️ removes element from DOM
+    mainAnimation.style.display = "none";
+  
+    // 👇️ hides element (still takes up space on page)
+    // box.style.visibility = 'hidden';
+  }, 1); // 👈️ time in milliseconds
+
+}
+
+
+
+
+
+
 
 $(document).ready(function () {
   "use strict";

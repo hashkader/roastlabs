@@ -1988,9 +1988,6 @@ h6 {
   margin: 0;
 }
 
-@media (max-width: 715px) {
-}
-
 @media (max-width: 768px) {
   #header #logo h1 {
     font-size: 28px;
@@ -3890,5 +3887,29 @@ img {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-area {
+    animation: fade-up 650ms 550ms backwards;
+  }
+
+  h6 {
+    animation: fade-up 650ms 800ms backwards;
+  }
+
+  h1 {
+    animation: fade-up 650ms 600ms backwards;
+  }
+
+  nav,
+  img {
+    animation: fade-up 650ms 1000ms backwards;
+    transition: all 0.1s ease 0s;
+  }
+
+  .primary-btn {
+    animation: fade-up 650ms 1000ms backwards;
   }
 }
